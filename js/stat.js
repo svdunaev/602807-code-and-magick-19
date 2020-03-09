@@ -1,5 +1,6 @@
-"use strict"
+'use strict';
 
-var renderStatistics = function (){
-
+window.renderStatistics = function(ctx) {
+  ctx.fillStyle = '#fff';
+  ctx.fillRect(100, 50, 500, 200);
 };
