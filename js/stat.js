@@ -58,7 +58,7 @@ window.renderStatistics = function (ctx, players, times) {
 
   for (var i = 0; i < players.length; i++) {
     //если добавить сюда вызов функции fillBarColor, консоль пишет, что ctx not defined
-    ctx.fillStyle = this.fillBarColor(players[i]);
+    ctx.fillStyle = fillBarColor(players[i], ctx);
     ctx.fillRect(CLOUD_X + GAP + (GAP + BAR_HEIGHT) * i, CLOUD_Y + 150, BAR_HEIGHT, -(barWidth * times[i]) / maxTime);
     ctx.fillText(players[i], CLOUD_X + GAP + (GAP + BAR_HEIGHT) * i, CLOUD_Y + 180);
   }
